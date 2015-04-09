@@ -1,0 +1,139 @@
+{% extends "template.html" %}
+{% block content %}
+<form class="inline" name="connect_form" method="post"
+    xmlns="http://www.w3.org/1999/html"  enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>
+
+                                <div class="onoffswitch">
+                    <input type="checkbox" name="song_request_on" class="onoffswitch-checkbox" id="myonoffswitch" {% if spotify_on == 1 %}checked="1" {% endif %} onclick="this.form.submit();">
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner">
+                    </span>
+                    <span class="onoffswitch-switch">
+                    </span>
+                    </label>
+                </div>
+                                {% if user_authorized %}
+                {% if spotify_on == 1 %}
+                <div id ="spotify_auth">
+                    Song Request Is On
+                </div>
+                {% else %}
+                <div id ="no_spotify_auth">
+                    Song Request Is Off
+                </div>
+                {% endif %}
+                {% else %}
+                <div id ="no_spotify_auth">
+                    {% if spotify_on == 1 %}
+                    Song Request Is On
+                    {% else %}
+                    Song Request Is Off
+                    {% endif %}
+                </div>
+                {% endif %}
+            </td>
+            <td>
+            {% if connected %}
+            <div id="spotify_auth">
+            Bot is Connected
+</div>
+{% else %}
+<div id="no_spotify_auth">
+Bot Disconnected
+</div>
+{% endif %}
+</td>
+
+        </tr>
+    </table>
+    <table>
+        <input type="hidden" name="connect" value="1">
+        <tr>
+            <td>
+                Bot username:
+            </td>
+            <td>
+                <input type="text" name="username" class="twitch_icon" value="{{ username }}" required>
+            </td>
+                        <td>
+                                                        <span title="Must be logged in as your bot username">
+                <a href="http://twitchapps.com/tmi/">Bot Oauth token:</a>
+                                                            </span>
+            </td>
+            <td>
+                <input type="text" name="oauth" class="oauth_icon" value="{{ oauth }}" required>
+            </td>
+        </tr>
+        <tr>
+
+        <tr>
+            <td>
+                Channel name:
+            </td>
+            <td>
+                <input type="text" name="channel" class="twitch_icon" value="{{ channel }}" required>
+            </td>
+                        <td>
+                            <span title="Must be logged in as your streamer username">
+                <a href="http://twitchapps.com/tmi/" >Channel Oauth token:</a></span>
+            </td>
+            <td>
+                <input type="text" name="channel_oauth" class="oauth_icon" value="{{ channel_oauth }}">
+            </td>
+        </tr>
+        <tr>
+        <td colspan="4" class="multi_col">
+        By entering the urls below the bot will announce them in chat every 15 minutes. Leave blank if you don't have one.
+</td>
+</tr>
+        <tr>
+            <td>
+                Twitter URL:
+            </td>
+            <td>
+                <input type="text" name ="twitter_url" class="twitter_icon" value="{{ twitter_url }}">
+            </td>
+                        <td>
+                Facebook URL:
+            </td>
+            <td>
+                <input type="text" name ="facebook_url" class="facebook_icon" value="{{ facebook_url }}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Instagram URL:
+            </td>
+            <td>
+                <input type="text" name ="instagram_url" class="instagram_icon" value="{{ instagram_url }}">
+            </td>
+                                  <td>
+                Tumblr URL:
+            </td>
+            <td>
+                <input type="text" name ="tumblr_url" class="tumblr_icon" value="{{ tumblr_url }}">
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            {% if connected %}
+            <td align="center">
+                <button type="submit" id ="connect" name="connect">
+                Disconnect Bot
+                </button>
+            </td>
+            {% else %}
+            <td align="center">
+                <button type="submit" id ="disconnected" name="disconnected">
+                Connect Bot
+                </button>
+            </td>
+            {% endif %}
+        </tr>
+    </table>
+</form>
+{% endblock %}

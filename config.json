@@ -1,0 +1,26 @@
+{
+    "dropbox_settings": {
+        "access_token": "A847tIxk1noAAAAAAAAFOxFL1qHqdQttmE1qOMNHCED-bXtoHCK7TeSUXsVcbGLY",
+        "app_key": "l5agvphvuews757",
+        "app_secret": "ixl7fs17athtbrm"
+    },
+    "general_settings": {
+        "bot_username": "",
+        "channel_name": "",
+        "channel_token": "",
+        "facebook": "",
+        "instagram": "",
+        "oauth_token": "",
+        "tumblr": "",
+        "twitter": "",
+        "youtube": ""
+    },
+    "social_advertise": {
+        "enabled": 0
+    },
+    "spotify_settings": {
+        "enabled": 1,
+        "playlist_id": "required",
+        "username": "required"
+    }
+}

@@ -1,0 +1,278 @@
+a:link,a:visited {
+   color: #DF7514;
+   text-decoration: none;
+   target-new: none;
+  }
+  a:hover {
+   color: #ff8c15;
+   text-decoration: underline;
+  }
+a.nav {
+    margin: 5px 5px 5px 5px;
+}
+a.nav:link,
+a.nav:visited {
+    display: inline-block;
+    margin-right: -4px;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #648f00;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #666666;
+    border: 0;
+}
+a.nav:hover,
+a.nav:active {
+    background-color: #74a503;
+    border: 0;
+}
+button[type="submit"] {
+    border-radius: 5px;
+    border-color: #222326;
+    width: 140px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    color: #adafb2;
+    background: #222326;
+    box-shadow: 0 1px 3px #666666;
+}
+button[type="submit"]:hover {
+    background: #2e2f33;
+    border-color: #FFFFFF;
+    color: #adafb2;
+}
+body {
+    background: #222326;
+    color: #adafb2;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+li {
+    display: inline;
+    list-style: none;
+}
+div {
+    padding: 5px;
+}
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+td {
+    padding-bottom: 5px;
+}
+td.multi_col{
+    text-align: center;
+    color: #cfcfd8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer{
+    width: 100%;
+    font-size: 10px;
+}
+#nav {
+    width: 100%;
+    border: 1px solid #adafb2;
+    border-left: none;
+    border-right: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 0 0 0 0;
+}
+input[type=text] {
+    border: 1px solid #666;
+    box-shadow: 0 0 5px #666 inset;
+    color: #333;
+    float: left;
+    padding: 7px 30px 7px 10px;
+    width: 165px;
+    outline: none;
+}
+input[type=text]:focus {
+    box-shadow: 0 0 5px 3px #ffa853;
+    font-weight: bold;
+}
+input.facebook_icon{
+    background: url('../images/facebook_icon.png') no-repeat scroll right center #ccc;
+}
+input.oauth_icon {
+    background: url('../images/oauth_icon.png') no-repeat scroll right center #ccc;
+}
+input.twitter_icon {
+    background: url('../images/twitter_icon.png') no-repeat scroll right center #ccc;
+}
+input.instagram_icon {
+    background: url('../images/instagram_icon.png') no-repeat scroll right center #ccc;
+}
+input.spotify_icon {
+    background: url('../images/spotify_icon.png') no-repeat scroll right center #ccc;
+}
+input.playlist_icon {
+    background: url('../images/playlist_icon.png') no-repeat scroll right center #ccc;
+}
+input.twitch_icon {
+    background: url('../images/twitch_icon.png') no-repeat scroll right center #ccc;
+}
+input.tumblr_icon {
+    background: url('../images/tumblr_icon.png') no-repeat scroll right center #ccc;
+}
+input.youtube_icon {
+    background: url('../images/youtube_icon.png') no-repeat scroll right center #ccc;
+}
+#spotify_auth {
+   color: #74a503;
+}
+#no_spotify_auth {
+    color: #ff0013;
+}
+#banner_title {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+#container_on {
+    width: 800px;
+    border: 1px solid #81976f;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 60px #bcb58f;
+}
+#container_off {
+    width: 800px;
+    border: 1px solid #bcb58f;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 60px #972913;
+}
+#spotify_playlist {
+    width: 300px;
+    overflow: hidden;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+#right_col_spotify {
+    width: 500px top: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+#spotify_table_right {
+    padding-left: 4px;
+}
+/* -------------------------- On OF SWITCH -------------------------- */
+
+.onoffswitch {
+    position: relative;
+    width: 61px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #C4C4C4;
+    border-radius: 8px;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 19px;
+    padding: 0;
+    line-height: 19px;
+    font-size: 10px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 7px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 7px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 14px;
+    margin: 2.5px;
+    background: #CF0F0F;
+    border: 2px solid #C4C4C4;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 38px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #74a503;
+}
+/* ------------------- END ON OFF SWITCH ---------------------- */
+.chat {
+    right:0;
+    float: right;
+    height: 500px;
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.channel {
+    left: 0;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0 0 0 0;
+}

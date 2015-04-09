@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    </head>
+    <body>
+        <div id = "banner_title">
+            <img src="{{ url_for('static', filename='images/banner.png') }}">
+        </div>
+        <div id = "nav">
+        <ul>
+            <li><a class="nav" href="/">My Channel</a></li>
+            <li><a class="nav" href="/spotify">Spotify</a></li>
+            <li><a class="nav" href="/settings">Settings</a></li>
+        </ul>
+        </div>
+        <div {% if spotify_on == 1 %}id="container_on"{% else %}id="container_off"{% endif %}>
+            {% block content %}{% endblock %}
+        </div>
+        <div id = "footer">
+        <ul>
+            <li><a class = "nav" href="/">Source</a></li>
+            <li><a class = "nav" href="/">about</a></li>
+        </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="chat">
+    <iframe frameborder="0" scrolling="no" src="http://twitch.tv/{{ channel }}/chat?popout=" height="100%" width="100%">
+    </iframe>
+</div>
+<div class="video">
+<object type="application/x-shockwave-flash" height="500" width="500px" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=clodbegamingnetwork" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel={{ channel }}&auto_play=true&start_volume=100" />
+</object>
+</div>
+{% endblock %}

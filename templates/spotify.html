@@ -1,0 +1,70 @@
+{% extends "template.html" %}
+{% block content %}
+<table>
+    <tr>
+        <td>
+            <div id="spotify_playlist">
+                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A{{user_id}}%3Aplaylist%3A{{playlist_id}}&view=coverart" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+        </td>
+        <td>
+            <div id = 'right_col_spotify'>
+                <table>
+                    <form method="post">
+                        <tr>
+                            <td>
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="song_request_on" class="onoffswitch-checkbox" id="myonoffswitch" {% if spotify_on == 1 %}checked="1"{% endif %} onclick ="this.form.submit();">
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            {% if user_authorized %}
+                            <td>
+                                <div id ="spotify_auth">
+                                    Spotify Authorized
+                                </div>
+                            </td>
+                            {% else %}
+                            <td>
+                                <div id ="no_spotify_auth">
+                                    Spotify Not Authorized
+                                </div>
+                            </td>
+                            {% endif %}
+                        </tr>
+                        <tr>
+                            <td>
+                            <a href="{{ url_for('static', filename='images/spotify_instuctions.png') }}">Spotify Username:</a>
+                            </td>
+                            <td id="spotify_table_right">
+                            <input type="text" name="spotify_username" class="spotify_icon" value = {{ spotify_user }} required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                             <a href="{{ url_for('static', filename='images/spotify_instuctions.png') }}">Spotify Playlist ID:</a>
+                            </td>
+                            <td id="spotify_table_right">
+                            <input type="text" name="playlist_id" class="playlist_icon" value = {{ playlist_id }} required>
+                            </td>
+                        </tr>
+                </table>
+                <div id = "spotify_auth">
+                {% if user_authorized %}
+                <button type="submit">
+                Re-Authorize Spotify
+                </button>
+                {% else %}
+                <button type="submit">
+                Authorize Spotify
+                </button>
+                {% endif %}
+                </div>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>
+{% endblock %}
