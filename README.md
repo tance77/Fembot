@@ -25,7 +25,7 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
      - Your spotify username (Click the orange links on the webpage if you need help finding this information.)
 
 #Running The Bot
-  - #MAKE SURE SHUFFLE IS OFF ON SPOTIFY
+  - MAKE SURE SHUFFLE IS OFF ON SPOTIFY
   - Once the bot is running you should see a black command prompt window. Leave this open while you run the bot. It will also open a web page on your local host on port 5000 127.0.0.1:5000 if you ever wish to acess the settings again. Once you have configured the settings and connected the bot you can close this browser window.
   - Take notice before you close the web browser that you bot is connected. To do so look the button on the settings page it should say dissconnect bot if you are connected. Also there should be green text that says the bot is connected. Note that you must authorize spotify the spotify page before connecting the bot. The bot will reset every time you close the black command prompt window.
 
