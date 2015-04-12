@@ -2,6 +2,10 @@
 
 Fembot is a song request bot for twitch.tv through spotify. This is currently a very new release with lots of bugs. Currently the play list is not setup to reflect the propper songs at all. 
 
+#Issues
+  -Must refresh playlist (by that i mean change to another screen in spotify or playlist) If playlist isn't refreshed songs are not updated. 
+  - Songs are not auto deleted. Stay on top of it between streemes.
+
 #Know Bugs
   - songs that has weird foriegn symbols from another language or weird charcaters [] may or may not crash the bot.
   - !songlist will show a playlist that is not yours. Ignore this your true playlist is in your spotify account. (will be fixed in the future)
@@ -21,6 +25,7 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
      - Your spotify username (Click the orange links on the webpage if you need help finding this information.)
 
 #Running The Bot
+  - # MAKE SURE SHUFFLE IS OFF ON SPOTIFY
   - Once the bot is running you should see a black command prompt window. Leave this open while you run the bot. It will also open a web page on your local host on port 5000 127.0.0.1:5000 if you ever wish to acess the settings again. Once you have configured the settings and connected the bot you can close this browser window.
   - Take notice before you close the web browser that you bot is connected. To do so look the button on the settings page it should say dissconnect bot if you are connected. Also there should be green text that says the bot is connected. Note that you must authorize spotify the spotify page before connecting the bot. The bot will reset every time you close the black command prompt window.
 
