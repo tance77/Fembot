@@ -3,7 +3,7 @@
 Fembot is a song request bot for twitch.tv through spotify. This is currently a very new release with lots of bugs. Currently the play list is not setup to reflect the propper songs at all. 
 
 #Issues
-  -Must refresh playlist (by that i mean change to another screen in spotify or playlist) If playlist isn't refreshed songs are not updated. 
+  - Must refresh playlist (by that i mean change to another screen in spotify or playlist) If playlist isn't refreshed songs are not updated. 
   - Songs are not auto deleted. Stay on top of it between streemes.
 
 #Know Bugs
