@@ -16,7 +16,7 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
   - Run app.exe allow permissions if windows firewall asks you
   - #Required
      - A twitch account dedicated to the bot that is not your primary one. For example I have access to the twitch account chinnbot
-     - The oAuth token for that account. (Must be logged into that account when getting the oAuth token) You can get this token here http://twitchapps.com/tmi/
+     - The oAuth token for that account. (Must be logged into that account when getting the oAuth token) You can get this token here http://twitchapps.com/tmi/ include the whole oauth include the oauth:
      - Your bot username needs to be a mod in your channel for all commands to function properly
      - The channel name you wish your bot to join. For example my channel name is blackmarmalade (all lower case always)
      - A spotify premium account to use song spotify portion of the playlist
