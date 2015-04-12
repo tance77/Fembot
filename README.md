@@ -23,6 +23,7 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
      - A private spotify playlist
      - The ID to your private spotify playlist (Click the orange links on the webpage if you need help finding this information)
      - Your spotify username (Click the orange links on the webpage if you need help finding this information.)
+     - A restart may or may not be required after you have configured your bot.
 
 #Running The Bot
   - MAKE SURE SHUFFLE IS OFF ON SPOTIFY
