@@ -31,8 +31,8 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
 
 #Commands
   - #Mod Only Commands
-      - !sron
-      - !sroff
+      - !sron (turns song request on can also be done on the wesbite but disconnects the bot)
+      - !sroff (turns song request off can also be done on the wesbite but disconnects the bot)
       - !gameq on "a queue for people that want to play with you off by default"
       - !gameq off
       - clearq "clears the entire queue"
