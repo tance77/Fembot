@@ -1,8 +1,8 @@
 {
     "dropbox_settings": {
-        "access_token": "A847tIxk1noAAAAAAAAFOxFL1qHqdQttmE1qOMNHCED-bXtoHCK7TeSUXsVcbGLY",
-        "app_key": "l5agvphvuews757",
-        "app_secret": "ixl7fs17athtbrm"
+        "access_token": "",
+        "app_key": "",
+        "app_secret": ""
     },
     "general_settings": {
         "bot_username": "",
