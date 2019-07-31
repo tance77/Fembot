@@ -41,7 +41,7 @@ Fembot is a song request bot for twitch.tv through spotify. This is currently a 
       - !next 5 "clears the next 5 people or however many peole out of the queue."
       - !addcom "example !addcom_user | !hello | hello world
   - Commands for Everyone
-    -  !dicksize
+
     -  !roulette
     -  magic eight ball,
     -  gg
